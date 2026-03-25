@@ -10,13 +10,17 @@ import {TableModule} from 'primeng/table';
 import {TooltipModule} from 'primeng/tooltip';
 import { DepartamentosPesquisaComponent } from './departamentos-pesquisa/departamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DepartamentoCadastroComponent } from './departamento-cadastro/departamento-cadastro.component';
+
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DepartamentosPesquisaComponent,
-    NavbarComponent
+    NavbarComponent,
+    DepartamentoCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     InputTextModule,
     ButtonModule,
     TableModule,
-    TooltipModule
+    TooltipModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
